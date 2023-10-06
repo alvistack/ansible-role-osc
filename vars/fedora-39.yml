@@ -14,16 +14,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_apt_key:
-  - keyring: "/etc/apt/trusted.gpg.d/openSUSE_Tools.gpg"
-    url: "http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/xUbuntu_23.10/Release.key"
-    id: "FCADAFC81273B9E7F184F2B0826659A9013E5B65"
+_rpm_key:
+  - key: "http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/Fedora_39/repodata/repomd.xml.key"
+    fingerprint: "FCADAFC81273B9E7F184F2B0826659A9013E5B65"
     state: "present"
 
-_apt_repository:
-  - filename: "openSUSE:Tools"
-    repo: "deb http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/xUbuntu_23.10/ /"
+_yum_repository:
+  - file: "openSUSE:Tools"
+    name: "openSUSE_Tools"
+    description: "openSUSE.org tools (Fedora_39)"
+    baseurl: "http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/Fedora_39"
+    enabled: true
+    priority: "2"
+    module_hotfixes: true
+    gpgcheck: true
+    gpgkey: "http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/Fedora_39/repodata/repomd.xml.key"
     state: "present"
 
-_apt:
+_yum:
   - { state: "latest", name: "osc" }
