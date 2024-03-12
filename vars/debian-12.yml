@@ -15,15 +15,15 @@
 # limitations under the License.
 
 _apt_key:
-  - keyring: "/etc/apt/trusted.gpg.d/openSUSE_Tools.gpg"
-    url: "http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/Debian_12/Release.key"
-    id: "FCADAFC81273B9E7F184F2B0826659A9013E5B65"
-    state: "present"
+  - keyring: /etc/apt/trusted.gpg.d/openSUSE_Tools.gpg
+    url: http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/Debian_12/Release.key
+    id: FCADAFC81273B9E7F184F2B0826659A9013E5B65
+    state: present
 
 _apt_repository:
-  - filename: "openSUSE:Tools"
-    repo: "deb http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/Debian_12/ /"
-    state: "present"
+  - filename: openSUSE:Tools
+    repo: deb http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/Debian_12/ /
+    state: present
 
 _apt:
-  - { state: "latest", name: "osc" }
+  - { state: latest, name: osc }
