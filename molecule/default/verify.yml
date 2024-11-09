@@ -18,8 +18,8 @@
   remote_user: root
   become: true
   tasks:
-    - name: osc --version
+    - name: osc version
       ansible.builtin.command:
-        cmd: osc --version
+        cmd: osc version
       register: result
       changed_when: result is not succeeded
