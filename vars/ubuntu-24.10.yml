@@ -14,13 +14,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+_apt_key:
+  - url: http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/xUbuntu_24.10/Release.key
+    dest: /etc/apt/keyrings/openSUSE-Tools.asc
+    checksum: "sha256:c51ea3e98a12ec1e353350ddb7baa345792403c5f538b5e403b4a70949c470e5"
+
 _deb822_repository:
-  - name: openSUSE:Tools
+  - name: openSUSE-Tools
     types: deb
     uris: http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/xUbuntu_24.10
     suites: /
     components:
-    signed_by: http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/xUbuntu_24.10/Release.key
+    signed_by: /etc/apt/keyrings/openSUSE-Tools.asc
     enabled: true
     state: present
 
