@@ -15,14 +15,14 @@
 # limitations under the License.
 
 _apt_key:
-  - url: http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/xUbuntu_24.10/Release.key
+  - url: http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/xUbuntu_25.04/Release.key
     dest: /etc/apt/keyrings/openSUSE-Tools.asc
     checksum: "sha256:379a2cec9dc208a33ba5f88078eafee6d7f329fdd9f8115f0525601731fb623d"
 
 _deb822_repository:
   - name: openSUSE-Tools
     types: deb
-    uris: http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/xUbuntu_24.10
+    uris: http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/xUbuntu_25.04
     suites: /
     components:
     signed_by: /etc/apt/keyrings/openSUSE-Tools.asc

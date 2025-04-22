@@ -17,7 +17,7 @@
 _apt_key:
   - url: http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/Debian_Testing/Release.key
     dest: /etc/apt/keyrings/openSUSE-Tools.asc
-    checksum: "sha256:c51ea3e98a12ec1e353350ddb7baa345792403c5f538b5e403b4a70949c470e5"
+    checksum: "sha256:379a2cec9dc208a33ba5f88078eafee6d7f329fdd9f8115f0525601731fb623d"
 
 _deb822_repository:
   - name: openSUSE-Tools
