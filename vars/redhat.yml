@@ -15,7 +15,7 @@
 # limitations under the License.
 
 _rpm_key:
-  - key: http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/Fedora_Rawhide/repodata/repomd.xml.key
+  - key: https://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/Fedora_Rawhide/repodata/repomd.xml.key
     fingerprint: FCADAFC81273B9E7F184F2B0826659A9013E5B65
     state: present
 
@@ -23,12 +23,12 @@ _yum_repository:
   - file: openSUSE:Tools
     name: openSUSE_Tools
     description: openSUSE.org tools (Fedora_Rawhide)
-    baseurl: http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/Fedora_Rawhide
+    baseurl: https://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/Fedora_Rawhide
     enabled: true
     priority: "2"
     module_hotfixes: true
     gpgcheck: true
-    gpgkey: http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/Fedora_Rawhide/repodata/repomd.xml.key
+    gpgkey: https://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/Fedora_Rawhide/repodata/repomd.xml.key
     state: present
 
 _yum:
