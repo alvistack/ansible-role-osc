@@ -17,7 +17,7 @@
 _apt_key:
   - url: http://download.opensuse.org/repositories/openSUSE:/Tools/xUbuntu_24.04/Release.key
     dest: /etc/apt/keyrings/openSUSE-Tools.asc
-    checksum: "sha256:379a2cec9dc208a33ba5f88078eafee6d7f329fdd9f8115f0525601731fb623d"
+    checksum: "sha256:cd995054b1ae0e9662b61ad41b7bb926d48e72a5acf38812160351f5606b5c23"
 
 _deb822_repository:
   - name: openSUSE-Tools
