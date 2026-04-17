@@ -15,14 +15,14 @@
 # limitations under the License.
 
 _apt_key:
-  - url: http://download.opensuse.org/repositories/openSUSE:/Tools/xUbuntu_26.04/Release.key
+  - url: http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/xUbuntu_26.04/Release.key
     dest: /etc/apt/keyrings/openSUSE-Tools.asc
     checksum: "sha256:cd995054b1ae0e9662b61ad41b7bb926d48e72a5acf38812160351f5606b5c23"
 
 _deb822_repository:
   - name: openSUSE-Tools
     types: deb
-    uris: http://download.opensuse.org/repositories/openSUSE:/Tools/xUbuntu_26.04
+    uris: http://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/xUbuntu_26.04
     suites: /
     components:
     signed_by: /etc/apt/keyrings/openSUSE-Tools.asc
