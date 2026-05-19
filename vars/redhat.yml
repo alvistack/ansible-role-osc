@@ -31,5 +31,5 @@ _yum_repository:
     gpgkey: https://downloadcontent.opensuse.org/repositories/openSUSE:/Tools/Fedora_Rawhide/repodata/repomd.xml.key
     state: present
 
-_yum:
+_dnf:
   - { state: latest, name: osc }
